@@ -1,0 +1,50 @@
+<div id="title">
+    <h1>Task Manager</h1>
+    <h3>"Just do it already"</h3>
+</div>
+
+<div id="task-lists">
+    <div id="incomplete">
+        <h1>To Do!</h1>
+        <hr>
+        {{#each tasks}}
+        {{#unless completed}}
+
+        <h3>
+            <span class="space-between">
+                {{this.task_name}}<button class="complete" data-id="{{this.id}}">Done!</button>
+            </span>
+        </h3>
+
+        {{/unless}}
+        {{/each}}
+    </div>
+
+    <div id="complete">
+        <h1>All done!</h1>
+        <hr>
+        {{#each tasks}}
+        {{#if completed}}
+        <h3>
+            <span class="space-between">
+                {{this.task_name}}<button class="delete-me" data-id="{{this.id}}">X</button>
+            </span>
+        </h3>
+
+        {{/if}}
+        {{/each}}
+    </div>
+
+</div>
+
+<div class="add-task">
+    <form action="/tasks/create" class="create-form" method="POST">                
+        <input type="text" name="task_name" value="" placeholder="Enter new task">
+        <button type="submit" id="text-enter-button">Submit New Task</button>
+    </form>
+</div>
+
+<footer>
+    <p>Created by Lindsey Bowen | Copyright 2019</p>
+   
+</footer>

@@ -1,0 +1,167 @@
+body {
+  background-image: url("/assets/img/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: darkslategray;
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+#title {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 80%;
+  width: 80%;
+  margin: 0 10%;
+}
+
+#task-lists {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+hr {
+  width: 90%;
+}
+
+button {
+  background-color: rgb(85, 80, 117);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0.1rem 0.1rem 0.1rem black;
+  color: white;
+  padding: 0.6rem;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#incomplete {
+  float: left;
+}
+
+#incomplete,
+#complete {
+  background-color: rgb(219, 217, 217);
+  border: 1px solid darkslategray;
+  border-radius: 2px;
+  box-shadow: 0.3rem 0.3rem 0.3rem darkslategray;
+  margin-top: 1rem;
+  width: 45%;
+}
+
+#incomplete,
+#complete > h1 {
+  text-align: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 4%;
+  transition: all 0.3s;
+}
+
+h2 {
+  background-color: rgb(223, 163, 114);
+  border-radius: 2px;
+  box-shadow: 0.2rem 0.2rem 0.2rem darkslategray;
+  margin: 1.5rem 25%;
+  padding: 0.5rem;
+  text-align: center;
+  width: 50%;
+}
+
+.add-task {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+form {
+  /*display: flex;
+    justify-content: center;*/
+  height: 20%;
+  width: 80%;
+  transition: all 0.3s;
+}
+
+input {
+  border: 1px solid darkslategray;
+  border-radius: 2px;
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 1.5rem;
+  height: 2rem;
+  margin: 1.5rem 25%;
+  text-align: center;
+  width: 50%;
+}
+
+form > button {
+  background-color: rgb(223, 163, 114);
+  color: darkslategray;
+  border-radius: 2px;
+  box-shadow: 0.2rem 0.2rem 0.2rem darkslategray;
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 2rem;
+  margin: 0 25% 3rem 25%;
+  padding: 0.5rem;
+  text-align: center;
+  width: 50%;
+}
+
+footer {
+  background-color: darkslategray;
+  border-top: 1px solid rgb(223, 163, 114);
+  color: whitesmoke;
+  height: 5%;
+  font-size: 0.7rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  #title {
+    line-height: 1;
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  #title > h1 {
+    font-size: 3.5rem;
+  }
+
+  #title > h3 {
+    font-size: 2rem;
+    margin-top: -2rem;
+  }
+
+  form {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  form > input {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  form > button {
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0.5rem 5% 3rem 5%;
+  }
+}
