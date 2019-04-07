@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS tasks_db;
-USE tasks_db;
+CREATE DATABASE IF NOT EXISTS tasks_sequelized_db;
+USE tasks_sequelized_db;
 
 -- If the table already exists, remove it before trying to create the table again
 DROP TABLE IF EXISTS tasks;
