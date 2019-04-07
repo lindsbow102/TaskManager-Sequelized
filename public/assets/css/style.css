@@ -105,6 +105,7 @@ input {
 form > button {
   background-color: rgb(223, 163, 114);
   color: darkslategray;
+  border-bottom: 3px solid rgb(165, 84, 18);
   border-radius: 2px;
   box-shadow: 0.2rem 0.2rem 0.2rem darkslategray;
   font-family: "Shadows Into Light Two", cursive;
